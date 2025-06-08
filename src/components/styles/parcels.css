@@ -70,16 +70,29 @@ body{
     justify-content: center;
     position: fixed;
     bottom: 72px;
+    left: 0px;
     background-color: #ffffff4b;
     border-top: 1px solid rgba(134, 134, 134, 0.2);
+    background-color: #F3F4F7;
+
 }
 
 
 .add__track{
-    background-color: #022135;
     background-color: #187705;
-    /* background-color: #001aff; */
-    width: 100%;
+    width: 240px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.27);
+    margin: 0 20px;
+}
+.open__archive{
+    background-color: #77054b;
+    width: 240px;
     border-radius: 10px;
     font-size: 16px;
     padding: 20px 0;
@@ -89,7 +102,6 @@ body{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.27);
     
 }
-
 .area{
     width: 100%;
     height: 100px;
@@ -415,6 +427,9 @@ body{
 
 
 @media only screen and (min-width: 1024px) {
+    .invoice__text{
+        margin-top: 20px;
+    }
     .statuses-client{
         width: 500px;
     }
@@ -448,7 +463,9 @@ body{
     .button__container{
         position: static;
         padding: 0px;
-        /* background-color: #e7e7e7; */
+        background-color: #e7e7e7;
+        background-color: #F3F4F7;
+
         border-top: 1px solid rgba(134, 134, 134, 0);
         z-index: 100;
 
@@ -522,9 +539,11 @@ body{
 
 
 
-
-
-
+@media only screen and (max-width: 1024px) {
+    .add__track{
+        margin: 0 10px;
+    }
+}
 
 
 
@@ -674,63 +693,3 @@ body{
     font-weight: 600;
     margin-bottom: 5px;
 }
-
-
-
-
-
-/* From Uiverse.io by barisdogansutcu */ 
-
-.loading-overlay{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: rgba(196, 196, 196, 0.04);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    z-index: 100000;
-
-
-}
-
-.svg-loading {
-    width: 3.25em;
-    transform-origin: center;
-    animation: rotate4 2s linear infinite;
-   }
-   
-   circle {
-    fill: none;
-    stroke: hsl(214, 97%, 59%);
-    stroke-width: 2;
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    animation: dash4 1.5s ease-in-out infinite;
-   }
-   
-   @keyframes rotate4 {
-    100% {
-     transform: rotate(360deg);
-    }
-   }
-   
-   @keyframes dash4 {
-    0% {
-     stroke-dasharray: 1, 200;
-     stroke-dashoffset: 0;
-    }
-   
-    50% {
-     stroke-dasharray: 90, 200;
-     stroke-dashoffset: -35px;
-    }
-   
-    100% {
-     stroke-dashoffset: -125px;
-    }
-   }
-   

@@ -153,6 +153,7 @@ const Parcels2 = () => {
 
                 <div className="statuses-bookmark">
                   <p className="description">{bookmark.description}</p>
+                  
                
                   <div className="status-item">
                     <FaCheckCircle className="status-icon completed" />

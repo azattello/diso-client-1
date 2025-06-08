@@ -22,12 +22,12 @@ const Tab = () => {
         <div className="Tab">
             <Link to="/main" className="tabbutton">
                 <img className="icons-svg" src={location.pathname === '/main' ? house2 : house} alt="" />
-                <p style={location.pathname === '/main' ? { color: '#01DA01' } : { color: '#808080' } }>{t('home.title')}</p>
+                <p style={location.pathname === '/main' ? { color: '#FEA500' } : { color: '#808080' } }>{t('home.title')}</p>
             </Link>
             
             <Link to="/parcels" className="tabbutton" >
                 <img className="icons-svg" src={location.pathname === '/parcels' ? box2 : box}  alt="" />
-                <p style={location.pathname === '/parcels' ? { color: '#01DA01' } : { color: '#808080' } }>{t('menu.parcels')}</p>
+                <p style={location.pathname === '/parcels' ? { color: '#FEA500' } : { color: '#808080' } }>{t('menu.parcels')}</p>
             </Link>
 
             {/* <Link to="/notification" className="tabbutton" >
@@ -37,7 +37,7 @@ const Tab = () => {
 
             <Link to="/profile" className="tabbutton" >
                 <img className="icons-svg" src={location.pathname === '/profile' ? user2 : user}  alt="" />
-                <p style={location.pathname === '/profile' ? { color: '#01DA01' } : { color: '#808080' } }>{t('menu.profile')}</p>
+                <p style={location.pathname === '/profile' ? { color: '#FEA500' } : { color: '#808080' } }>{t('menu.profile')}</p>
             </Link>
             
         </div>
